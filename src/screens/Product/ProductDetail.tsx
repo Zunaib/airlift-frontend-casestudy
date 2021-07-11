@@ -10,7 +10,6 @@ export interface paramsSlug {
 
 const ProductDetail = (props: any) => {
   const { slug } = useParams<paramsSlug>();
-  console.log(props.location);
   const [fetched, setFetched] = useState(false);
   const [product, setProduct] = useState([]);
   const { Title, Paragraph } = Typography;
@@ -25,7 +24,6 @@ const ProductDetail = (props: any) => {
         },
       })
       .then((res: any) => {
-        console.log(res);
         setFetched(true);
         setProduct(res.data.length > 0 ? res.data : []);
         if (res.data.length === 0) {
@@ -47,8 +45,8 @@ const ProductDetail = (props: any) => {
             </Col>
           </Row>
         ) : (
-          product.map((prd: any) => (
-            <Fragment>
+          product.map((prd: any, idx: number) => (
+            <Fragment key={idx}>
               <Row className="prod-row" justify="start" gutter={[16, 16]}>
                 <Col span={10}>
                   <img

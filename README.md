@@ -20,7 +20,7 @@
 1. Clone the repo using https.
 2. **_MUST TODO:_**
 
-- Add **.env.development.local** file to the root of project and add your API config like **REACT_APP_AIRLIFT_API_ADDR = 'https://storeapi.airliftgrocer.com/'** as exactly mentioned.
+- For Development Mode - Add **.env.development.local & .env.production.local** file to the root of project and add your API config like **REACT_APP_AIRLIFT_API_ADDR = 'https://storeapi.airliftgrocer.com/'** as exactly mentioned.
 
 3. Run `npm install` to install all the dependencies.
 4. Run `npm run start` to execute project in development mode.

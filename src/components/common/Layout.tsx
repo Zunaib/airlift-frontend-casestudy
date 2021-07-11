@@ -45,13 +45,13 @@ const AppLayout: FC = ({ children, history }: any) => {
     <Layout>
       <Header className="header">
         <Row justify="center">
-          <Col className="header-element" span={2}>
+          <Col className="header-element" xxl={2} xl={2}>
             <a href="/category/beverages" className="logo">
               <img src={AirliftLogo} alt="airliftLogo" />
             </a>
           </Col>
           <Divider className="divider" type="vertical" />
-          <Col className=" header-element dropdown-element" span={3}>
+          <Col className=" header-element dropdown-element" xxl={3} xl={4}>
             <Dropdown
               className="dropdown"
               overlay={deliverAtMenu}
@@ -72,12 +72,12 @@ const AppLayout: FC = ({ children, history }: any) => {
           </Col>
           <Divider className="divider" type="vertical" />
 
-          <Col className="header-element" span={12}>
+          <Col className="header-element" xxl={10} xl={6}>
             <Search className="search-bar" placeholder="Search" />
           </Col>
           <Divider className="divider" type="vertical" />
 
-          <Col className="header-element dropdown-element" span={4}>
+          <Col className="header-element dropdown-element" xxl={6} xl={7}>
             <Dropdown
               className="dropdown"
               overlay={loginSignUpMenu}
@@ -97,7 +97,7 @@ const AppLayout: FC = ({ children, history }: any) => {
           </Col>
           <Divider className="divider" type="vertical" />
 
-          <Col className="header-element dropdown-element" span={2}>
+          <Col className="header-element dropdown-element" xxl={2} xl={3}>
             <Dropdown
               className="dropdown"
               overlay={myCartMenu}
@@ -127,6 +127,7 @@ const AppLayout: FC = ({ children, history }: any) => {
           <Menu className="sider-menu">
             <Menu.Item
               className="sider-menu-item"
+              key="1"
               onClick={() => {
                 localStorage.setItem("activeCat", "beverage");
                 history.push("/category/beverages");
@@ -139,6 +140,7 @@ const AppLayout: FC = ({ children, history }: any) => {
             </Menu.Item>
             <Menu.Item
               className="sider-menu-item"
+              key="2"
               onClick={() => {
                 localStorage.setItem("activeCat", "frozen-meat");
                 history.push("/category/meat-frozen");

@@ -10,8 +10,10 @@ const TagsCarousel = ({ tags }: TagsCarouselProps) => {
     <Row className="quick-tags">
       <Col span={24}>
         <AiOutlineLeft className="icon" size={30} />
-        {tags.map((tag: string) => (
-          <Tag className="quick-tag">{tag}</Tag>
+        {tags.map((tag: string, idx: number) => (
+          <Tag className="quick-tag" key={idx}>
+            {tag}
+          </Tag>
         ))}
         <AiOutlineRight className="icon" size={30} />
       </Col>

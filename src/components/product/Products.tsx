@@ -51,7 +51,6 @@ const Products = ({
         },
       })
       .then((res: any) => {
-        console.log(res);
         setFetched(true);
         setData(res.data.length > 0 ? res.data : []);
         if (res.data.length === 0) {
@@ -69,8 +68,8 @@ const Products = ({
           title={pageTitle}
           breadcrumb={
             <Breadcrumb className="crumb" separator=">">
-              {breadCrumbs?.map((crumb: string) => (
-                <Breadcrumb.Item>{crumb}</Breadcrumb.Item>
+              {breadCrumbs?.map((crumb: string, idx: number) => (
+                <Breadcrumb.Item key={idx}>{crumb}</Breadcrumb.Item>
               ))}
             </Breadcrumb>
           }
