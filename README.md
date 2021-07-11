@@ -18,7 +18,7 @@
 ## How to run assessment
 
 1. Clone the repo using https.
-2. Add **.evn.development** file to the root and add your API config like **REACT_APP_AIRLIFT_API_ADDR = 'https://storeapi.airliftgrocer.com/'** as exactly mentioned.
+2. Add **.env.development.local** file to the root and add your API config like **REACT_APP_AIRLIFT_API_ADDR = 'https://storeapi.airliftgrocer.com/'** as exactly mentioned.
 3. Run `npm install` to install all the dependencies.
 4. Run `npm run start` to execute project in development mode.
 
