@@ -12,14 +12,15 @@
 - Product Detail
 - And much more atomic components
 
-6. Restructured React app for better code management.
-7. Styled the app using **SCSS**
+5. Restructured React app for better code management.
+6. Styled the app using **SCSS**
 
 ## How to run assessment
 
 1. Clone the repo using https.
-2. Run `npm install` to install all the dependencies.
-3. Run `npm run start` to execute project in development mode.
+2. Add **.evn.development** file to the root and add your API config like **REACT_APP_AIRLIFT_API_ADDR = 'https://storeapi.airliftgrocer.com/'** as exactly mentioned.
+3. Run `npm install` to install all the dependencies.
+4. Run `npm run start` to execute project in development mode.
 
 ## Disclaimer
 
