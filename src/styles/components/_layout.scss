@@ -1,0 +1,141 @@
+.header {
+  height: 60px;
+  background-color: #fff;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 10px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  z-index: 99999;
+  justify-content: space-around;
+
+  .header-element {
+    padding: 0px 10px;
+  }
+
+  .divider {
+    height: 60px;
+    border-left: 2px ​solid rgba(0, 0, 0, 0.06);
+    margin: 0 !important;
+  }
+
+  .logo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      vertical-align: middle;
+      border-style: none;
+    }
+  }
+
+  .dropdown-element {
+    transition: all ease-in 0.25s;
+    &:hover {
+      background-color: rgb(240, 240, 240);
+    }
+  }
+
+  .dropdown {
+    color: black !important;
+    height: 60px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      margin: 0 10px;
+      &.cart {
+        color: #d6273d;
+      }
+    }
+
+    .dropdown-text {
+      width: 70%;
+      &.cart {
+        color: #d6273d;
+      }
+    }
+  }
+
+  .search-bar {
+    color: black !important;
+    height: 60px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.sider {
+  flex: 0 0 220px !important;
+  max-width: 220px !important;
+  min-width: 220px !important;
+  width: 200px !important;
+  padding: 20px 0px;
+
+  .ant-menu-item {
+    margin: 0px !important;
+  }
+
+  .ant-menu-item-selected {
+    background-color: rgba(255, 255, 255, 0) !important;
+    color: rgb(0, 0, 0) !important;
+  }
+
+  .ant-menu-item-active {
+    background-color: rgb(248, 248, 248) !important;
+    color: rgb(214, 0, 0) !important;
+  }
+
+  .sider-menu {
+    .ant-menu-title-content {
+      display: flex;
+      .element-left {
+        width: 94%;
+      }
+
+      .element-right {
+        flex-grow: 1;
+        margin: 2px 0px;
+      }
+    }
+  }
+
+  .title {
+    padding: 0px 15px;
+    font-weight: 700 !important;
+  }
+
+  .side-search-bar {
+    padding: 10px 19px;
+  }
+
+  .sider-menu-item {
+    height: 30px !important;
+    line-height: 30px !important;
+  }
+}
+
+.app-body {
+  height: calc(100vh - 60px);
+  width: 75rem;
+  display: flex;
+  margin: 0 auto;
+
+  .site-layout-background {
+    background: #fff;
+    max-height: calc(100vh - 60px);
+    overflow: auto;
+  }
+
+  .site-layout-background::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .site-layout-background {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
